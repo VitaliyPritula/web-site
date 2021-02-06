@@ -36,15 +36,19 @@
 }
 
 @font-face{
-    font-family: 'RobotoCondensed';
+    font-family: 'RobotoCondensed-Regular';
     src:url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
-        url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
-        url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'RobotoCondensed-Bold';
+    src:url('../fonts/RobotoCondensed-Bold.woff2') format('woff2'),
         url('../RobotoCondensed-Bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
-
 @font-face{
     font-family: 'Bebas Neue';
     src:url('../fonts/BebasNeueRegular.woff') format('woff');
