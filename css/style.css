@@ -30,7 +30,7 @@ h3 {
   display: flex;
 }
 .default-section {
-  padding: 100px 15px;
+  padding: 30px 0 0;
 }
 
 .menu-nav{
@@ -96,7 +96,7 @@ display: none;
   border-width: 1px;
   border-color: rgb(227, 227, 227);
   background-color: rgb(255, 255, 255);
-  width: 430px;
+  width: 100%;
   padding: 10px 20px 13px;
   margin-right: 6px;
 }
@@ -121,28 +121,31 @@ input:focus {
   background-color:#157d8c;
 }
 .section-list{
-  background-color: #6ac4b8; 
+  background-image: url(../img/heder-img.png);
+  border-top: 1px solid#99dad2;
 }
 .section-list img{
   width: 18px;
+  margin: 0 25px -5px 0;
 }
 
+.headerli_list li {
+  padding: 18px 20px;
+  display: inline-block;
+}
+.headerli_list a{
+  text-decoration: none;
+  color: #fff;
+}
 
-
-
-
-
-
-
-
-.slide-section{
+.default-section{
   padding: 30px 0 0;
 }
 
 .slider {
   background-image: url("../img/slick-img.jpg");
   height: 370px;
-  width: 630px;
+  max-width: 630px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -206,12 +209,10 @@ input:focus {
   color:#fff;
   letter-spacing: 2px;
 }
-
-
-
 /* сидебар */
 .sideBar{
   padding: 0 32px;
+  width: 315px;
 }
 .sideBar_tem {
   cursor: pointer;
@@ -244,7 +245,6 @@ input:focus {
 }
 .menu-checkbox{
   padding: 20px 22px 6px;
-  max-width: 260px;
 }
 .menu-checkbox span{
   font-size: 18px;
@@ -252,11 +252,12 @@ input:focus {
   color: rgb(56, 56, 56);
 }
 
-
 input[type=checkbox] + label {
   display: block;
   cursor: pointer;
   margin-bottom: 20px;
+  font-family: "OpenSans";
+  color: rgb(153, 153, 153);  
 }
 .checkx-box{
   padding: 30px 0 0;
@@ -299,10 +300,97 @@ input[type=checkbox]:checked:disabled + label:before {
   background-color: #bfb;
   border-color: #bfb;
 }
+.sideBar a{
+  font-size: 18px;
+  font-family: "RobotoCondensed";
+  color: rgb(254, 211, 79);
+  font-weight: bold;
+  line-height: 0.778;
+  margin: 0 12px 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+.sideBar-img{
+  display: flex;
+  justify-content: center;
+}
+.img-holder img{
+  padding: 10px 0;
+}
+.line-background{
+  background-color:#e3e3e3;
+  width: 630px;
+  height: 1px;  
+}
+.news-section .sideBar_section h1{
+  font-size: 22px;
+  font-family: "RobotoCondensed";
+  font-weight: bold;
+  line-height: 2.409;
+  text-align: center;
+  background-color:#91d35f;  
+  color: #fff;
+  padding: 0;
+}
+.news-section h1{
+  font-size: 32px;
+  font-family: "RobotoCondensed";
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  line-height: 1.656;
+  text-align: center; 
+}
+.new-info{
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid  rgb(227, 227, 227);
+}
+.nev-title{
+  padding: 0 20px;
+  max-width: 366px;
+}
+.nev-title a{
+  font-size: 18px;
+  font-family: "RobotoCondensed";
+  color:#383838;
+  line-height: 1.333;
+  margin: 0 12px 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
 
+.data-title .fa-calendar, .fa-eye{
+  color:#6ac4b8;
+}
+.data-title, .data-title_img {
+  margin: 10px 0 0;
+}
 
+.data-title  span {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(106, 196, 184);
+  line-height: 1.429;
+  font-weight: 900;
+  padding: 0 20px 0 0;
+}
+.col-2{
+  display: flex;
+}
 
-
+.title-holder{
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(119, 119, 119);
+  line-height: 1.429;
+  padding: 14px 0;
+}
+.li-holder a{
+  font-size: 16px;
+  font-family: "RobotoCondensed";
+  color: rgb(106, 196, 184);
+}
 
 
 
@@ -385,6 +473,27 @@ input[type=checkbox]:checked:disabled + label:before {
   }
 }
 
+@media (max-width:425px) {
+  .slider{
+   max-width: 360px; 
+  }
+
+}
+@media (max-width:375px) {
+  .slider{
+   max-width: 365px; 
+  }
+}
+
+@media (max-width:320px) {
+  .slider{
+   max-width: 310px; 
+  }
+  .sideBar{
+    padding: 0;
+    width: 310px;
+  }
+}
 
 
 
