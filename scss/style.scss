@@ -217,27 +217,27 @@ input:focus {
   position: relative;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.swiper-slide {
+  &__content{
+    position: relative;
+    z-index: 2;
+  }
 }
-
 .slide__content {
   position: relative;
   font-family: "BebasCyrillic";
   font-size: 36px;
   line-height: 105%;
   padding: 30px 35px;
+
   p {
     color: rgb(254, 211, 79);
   }
 
   div {
-    color:#fff;
+    color: #fff;
   }
-  
+
 }
 
 .swiper-pagination-bullet {
