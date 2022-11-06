@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>1-й информационный зоопортал Украины</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/fonts-icon.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
 
   <div class="wrapper">
@@ -52,7 +55,7 @@
           <div class="search-img">
             <img src="img/Щенок.png" alt="">
           </div>
-        </div> 
+        </div>
       </div>
     </section>
     <section class="section-list">
@@ -67,48 +70,50 @@
             <li><img src="img/track.png" alt=""><a href="#">Форум</a></li>
             <li><img src="img/track.png" alt=""></li>
           </ul>
-       </div>
+        </div>
       </div>
     </section>
     <section class="slide-section default-section">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="slider">
-              <div class="slider_item filter">
-                <h1>Новые питомники</h1>
-                <div>щенков и котят</div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/slick-img.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/sidebar-img.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/new-img1.jpg" alt="">
+                </div>
               </div>
-              <div class="slider_item">
-                <h1>Новые питомники</h1>
-                <div>щенков и котят</div>
-              </div>
-              <div class="slider_item filter">
-                <h1>Новые питомники</h1>
-                <div>щенков и котят</div>
-              </div>
-            </div> 
+              <div class="swiper-pagination"></div>
+            </div>
+
           </div>
           <div class="col">
             <div class="sideBar">
               <div class="sideBar_section">
                 <h1>Опрос</h1>
                 <div class="menu-checkbox">
-                <span>Какой питомец сейчас живет у Вас дома?</span>
-                <div class="checkx-box">
-                  <form>
-                    <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
-                    <label for="fruit1">Кошка</label>
-                    <input type="checkbox" id="fruit2" name="fruit-2" value="Banana">
-                    <label for="fruit2">Собака</label>
-                    <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry">
-                    <label for="fruit3">Птица</label>
-                    <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry">
-                    <label for="fruit4">Рыбка</label>
-                    <input type="checkbox" id="fruit5" name="fruit-5" value="Strawberry">
-                    <label for="fruit5">Другое</label>
-                  </form>
-                </div>
+                  <span>Какой питомец сейчас живет у Вас дома?</span>
+                  <div class="checkx-box">
+                    <form>
+                      <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                      <label for="fruit1">Кошка</label>
+                      <input type="checkbox" id="fruit2" name="fruit-2" value="Banana">
+                      <label for="fruit2">Собака</label>
+                      <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry">
+                      <label for="fruit3">Птица</label>
+                      <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry">
+                      <label for="fruit4">Рыбка</label>
+                      <input type="checkbox" id="fruit5" name="fruit-5" value="Strawberry">
+                      <label for="fruit5">Другое</label>
+                    </form>
+                  </div>
                 </div>
               </div>
               <div class="sideBar-img">
@@ -116,20 +121,20 @@
                   <div class="sideBar-img">
                     <img src="img/track2.png">
                   </div>
-                    <a href="#">Голосовать</a>
+                  <a href="#">Голосовать</a>
                 </div>
                 <div class="img-holder">
                   <div class="sideBar-img">
                     <img src="img/track2.png">
                   </div>
-                    <a href="#">Результаты</a>
-                </div>         
+                  <a href="#">Результаты</a>
+                </div>
                 <div class="img-holder">
                   <div class="sideBar-img">
                     <img src="img/track2.png">
                   </div>
-                    <a href="#">Все опросы</a>
-                </div>                  
+                  <a href="#">Все опросы</a>
+                </div>
               </div>
             </div>
           </div>
@@ -158,11 +163,12 @@
                     <img src="img/massege.png" alt="">
                     <span>7</span>
                   </div>
-                </div>          
-                <div class="title-holder">Практически у каждого, кто задумывается о покупке животного, возникает вопрос, где лучше приобрести себе друга, на птичьем рынке или в зоомагазине?</div>
+                </div>
+                <div class="title-holder">Практически у каждого, кто задумывается о покупке животного, возникает вопрос,
+                  где лучше приобрести себе друга, на птичьем рынке или в зоомагазине?</div>
                 <div class="li-holder">
                   <a href="#">Читать подробнее</a>
-                 </div>
+                </div>
               </div>
             </div>
             <div class="new-info">
@@ -182,11 +188,12 @@
                     <img src="img/massege.png" alt="">
                     <span>15</span>
                   </div>
-                </div>                
-                <div class="title-holder">О том, что довольная собака виляет хвостом, а напуганная его поджимает известно многим, но это далеко не все, что животное может сказать хвост.</div>
-               <div class="li-holder">
-                <a href="#">Читать подробнее</a>
-               </div>
+                </div>
+                <div class="title-holder">О том, что довольная собака виляет хвостом, а напуганная его поджимает
+                  известно многим, но это далеко не все, что животное может сказать хвост.</div>
+                <div class="li-holder">
+                  <a href="#">Читать подробнее</a>
+                </div>
               </div>
             </div>
             <div class="new-info">
@@ -207,12 +214,13 @@
                     <span>27</span>
                   </div>
                 </div>
-                <div class="title-holder">Международная группа палеонтологов совершенно случайно наткнулась на останки животного, которое не было ранее известно науке.</div>
+                <div class="title-holder">Международная группа палеонтологов совершенно случайно наткнулась на останки
+                  животного, которое не было ранее известно науке.</div>
                 <div class="li-holder">
                   <a href="#">Читать подробнее</a>
                 </div>
               </div>
-            </div>          
+            </div>
           </div>
           <div class="col">
             <div class="sideBar">
@@ -236,18 +244,19 @@
     </section>
     <section class="useful_tips">
       <h1>Полезные советы</h1>
-      <hr></hr>
+      <hr>
+      </hr>
       <div class="container">
         <div class="row">
           <div class="col">
-           <ul>
-             <li>
-               <span class="descr">
-                 <a href="#">Как правильно фотографировать животных</a>
+            <ul>
+              <li>
+                <span class="descr">
+                  <a href="#">Как правильно фотографировать животных</a>
                 </span>
-               <img src="img/useful-img1.jpg" alt="">
+                <img src="img/useful-img1.jpg" alt="">
               </li>
-           </ul>
+            </ul>
           </div>
           <div class="col">
             <ul>
@@ -256,7 +265,7 @@
                   <a href="#">Чумка у кошек: симптомы, лечение и профилактика</a>
                 </span>
                 <img src="img/useful-img2.jpg" alt="">
-               </li>
+              </li>
             </ul>
           </div>
           <div class="col">
@@ -266,27 +275,30 @@
                   <a href="#">Как аквариум в доме влияет на здоровье человека</a>
                 </span>
                 <img src="img/useful-img3.jpg" alt="">
-               </li>
+              </li>
             </ul>
           </div>
-        </div>        
+        </div>
       </div>
     </section>
     <section class="interesting_articles-email">
       <div class="container">
         <h1>Получайте интересные статьи первыми!</h1>
-        <hr></hr>
+        <hr>
+        </hr>
         <div class="row">
           <div class="col">
             <div class="input-holder">
-              <input type="text" class="search-input" id="name" name="searchString" placeholder="Ваше имя" autocomplete="off">
+              <input type="text" class="search-input" id="name" name="searchString" placeholder="Ваше имя"
+                autocomplete="off">
             </div>
             <div class="input-holder">
-              <input type="text" class="search-input" name="searchString" placeholder="E-mail" id="E-mail"autocomplete="off">
+              <input type="text" class="search-input" name="searchString" placeholder="E-mail" id="E-mail"
+                autocomplete="off">
             </div>
             <div class="btn-articles">
               <button>Подписаться</button>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -303,7 +315,7 @@
             <li><img src="img/track.png" alt=""><a href="#">Форум</a></li>
             <li><img src="img/track.png" alt=""></li>
           </ul>
-       </div>
+        </div>
       </div>
     </section>
     <footer class="section-list_footer">
@@ -312,7 +324,7 @@
           <div class="search-img">
             <a href="#">
               <img src="img/pets-2.png" alt="">
-            <div>Pets Today</div>
+              <div>Pets Today</div>
             </a>
           </div>
           <div class="search-footer">
@@ -326,20 +338,21 @@
                 <a href="#"><img src="img/facebook.png" alt=""></a>
                 <a h ref="#"><img src="img/twitter.png" alt=""></a>
               </div>
-            </div>  
+            </div>
             <div class="contact-holder-li">
               <a href="#">Создание сайта </a>
               <span>- WebСтрой</span>
               <img src="img/sloy_26_591.png" alt="">
-            </div>          
+            </div>
           </div>
-        </div> 
+        </div>
       </div>
     </footer>
-  </div>  
+  </div>
   <script src="https://use.fontawesome.com/3b749b4378.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
