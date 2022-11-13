@@ -186,7 +186,7 @@ ol {
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   input {
@@ -237,7 +237,13 @@ ol {
   @media (min-width: 530px) {
     display: inline-flex;
     align-items: center;
+  }
 
+  @media (max-width: 530px) {
+    &:last-child {
+      padding-top: 0;
+      margin: 0px 0px 20px 0px;
+    }
   }
 }
 
@@ -306,9 +312,11 @@ ol {
 /*=============================================================================================================*/
 
 /* сидебар */
-.sideBar {
-  padding: 0 30px;
-  width: 315px;
+@media (min-width: 768px) {
+  .sideBar {
+    padding: 0 30px;
+    width: 315px;
+  }
 }
 
 .sideBar_tem {
@@ -473,14 +481,29 @@ input[type=checkbox]:checked:disabled+label:before {
 
 .new-info {
   padding: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
   border-top: 1px solid rgb(227, 227, 227);
+
+  @media (min-width: 640px) {
+    display: flex;
+  }
 }
 
 .nev-title {
-  padding: 0 20px;
-  max-width: 346px;
+  @media (min-width: 640px) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 346px;
+  }
+}
+
+.new-img {
+  @media (max-width: 640px) {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .nev-title a {
@@ -545,7 +568,11 @@ input[type=checkbox]:checked:disabled+label:before {
   img {
     width: 100%;
 
-    @media (max-width: 768px) {}
+    @media (max-width: 768px) {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 }
 
@@ -633,7 +660,7 @@ input[type=checkbox]:checked:disabled+label:before {
   max-width: 970px;
   background-color: rgb(227, 227, 227);
   opacity: .4;
-  margin: 0 auto;
+  margin: 0 auto 30px/20px * 1em 0;
 }
 
 
@@ -676,9 +703,10 @@ input[type=checkbox]:checked:disabled+label:before {
   color: rgb(119, 119, 119);
   font-size: 16px;
   padding: 15px 20px;
-  width: 370px;
+  width: 87%;
   border: none;
   font-family: "RobotoCondensed";
+
 }
 
 .interesting_articles-email input[type="text"]::placeholder {
@@ -686,9 +714,16 @@ input[type=checkbox]:checked:disabled+label:before {
 }
 
 .form__body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-input {
+    margin: 0px 0px 10px 0px;
+  }
 }
 
 .form-input._error {
@@ -866,6 +901,7 @@ span {
 
   .menu-nav.active {
     top: 0;
+    overflow-y: scroll;
   }
 
   .header_list li {
@@ -874,10 +910,6 @@ span {
 
   .useful_tips .row {
     justify-content: flex-start;
-  }
-
-  .interesting_articles-email input {
-    width: 243px;
   }
 
   .news-section .sideBar {
@@ -891,14 +923,6 @@ span {
   .title_search {
     line-height: 1.5;
   }
-
-
-
-
-  .new-info {
-    padding: 30px;
-  }
-
   .nev-title {
     padding: 0;
   }
@@ -918,19 +942,9 @@ span {
 }
 
 @media (max-width:320px) {
-  .sideBar {
-    padding: 0;
-    width: 310px;
-  }
-
   .search-footer img {
     margin-top: -12px;
     width: 260px;
-  }
-
-  .useful_tips img {
-    max-width: 300px;
-    padding: 30px 0;
   }
 
   .interesting_articles-email input {
