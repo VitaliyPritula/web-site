@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>1-й информационный зоопортал Украины</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/fonts-icon.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/icon-fonts.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,7 +22,7 @@
             <span></span>
           </div>
           <nav class="menu-nav">
-            <ul class="header_list">
+            <ul class="header__list">
               <li><a href="#" class="header_li">О проекте</a></li>
               <li><a href="#" class="header_li">Выставки</a></li>
               <li><a href="#" class="header_li">Обратная связь</a></li>
@@ -33,7 +33,7 @@
     </header>
     <section class="section-search">
       <div class="container">
-        <div class="col">
+        <div class="row jc-se">
           <div class="search-img">
             <a href="">
               <img src="img/pets.png" alt="">
@@ -44,13 +44,10 @@
             <div class="title_search">
               <span>1-й</span> информационный зоопортал <span>Украины</span>
             </div>
-            <div class="input-holder">
-              <input type="text" class="search-input" name="searchString" placeholder="Поиск по сайту
-            " autocomplete="off">
-              <label for="event-search-submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </label>
-            </div>
+            <form action="#" class="search-form">
+              <input type="text" id="elastic" name="search" placeholder="Поиск по сайту">
+              <button type="submit" class="form-btn btn _icon-search"></button>
+            </form>
           </div>
           <div class="search-img">
             <img src="img/Щенок.png" alt="">
@@ -60,8 +57,8 @@
     </section>
     <section class="section-list">
       <div class="container">
-        <div class="col">
-          <ul class="headerli_list">
+        <div class="row">
+          <ul data-da=".menu-nav, 640, 1" class="headerli_list">
             <li><img src="img/track.png" alt=""><a href="#">Объявления</a></li>
             <li><img src="img/track.png" alt=""><a href="#">Питомники</a></li>
             <li><img src="img/track.png" alt=""><a href="#">Ветклиники</a></li>
@@ -108,7 +105,6 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
           </div>
           <div class="col">
             <div class="sideBar">
@@ -118,16 +114,16 @@
                   <span>Какой питомец сейчас живет у Вас дома?</span>
                   <div class="checkx-box">
                     <form>
-                      <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
-                      <label for="fruit1">Кошка</label>
-                      <input type="checkbox" id="fruit2" name="fruit-2" value="Banana">
-                      <label for="fruit2">Собака</label>
-                      <input type="checkbox" id="fruit3" name="fruit-3" value="Cherry">
-                      <label for="fruit3">Птица</label>
-                      <input type="checkbox" id="fruit4" name="fruit-4" value="Strawberry">
-                      <label for="fruit4">Рыбка</label>
-                      <input type="checkbox" id="fruit5" name="fruit-5" value="Strawberry">
-                      <label for="fruit5">Другое</label>
+                      <input type="checkbox" id="cat" name="cat" value="cat">
+                      <label for="cat">Кошка</label>
+                      <input type="checkbox" id="dog" name="dog" value="dog">
+                      <label for="dog">Собака</label>
+                      <input type="checkbox" id="bird" name="bird" value="bird">
+                      <label for="bird">Птица</label>
+                      <input type="checkbox" id="fish" name="fish" value="fish">
+                      <label for="fish">Рыбка</label>
+                      <input type="checkbox" id="other" name="fish" value="other">
+                      <label for="other">Другое</label>
                     </form>
                   </div>
                 </div>
@@ -157,17 +153,17 @@
         </div>
       </div>
     </section>
-    <section class="news-section default-section">
+    <section class="news-section default-section card">
       <div class="container">
-        <div class="row">
+        <div class="row card">
           <div class="col-1">
             <h1>Самое свежее из блогов</h1>
-            <div class="new-info">
-              <div class="new-img">
+            <div class="new-info card">
+              <div class="new-img card">
                 <img src="img/new-img1.jpg" alt="">
               </div>
               <div class="nev-title">
-                <a href="#">Где лучше покупать животных, на птичьем рынке или в зоомагазине</a>
+                <a href="#">Где лучше покупать животных, по птичьем рынке или в зоомагазине</a>
                 <div class="col-2">
                   <div class="data-title">
                     <img src="img/1.png" alt="">
@@ -187,8 +183,8 @@
                 </div>
               </div>
             </div>
-            <div class="new-info">
-              <div class="new-img">
+            <div class="new-info card">
+              <div class="new-img card">
                 <img src="img/new-img2.jpg" alt="">
               </div>
               <div class="nev-title">
@@ -212,8 +208,8 @@
                 </div>
               </div>
             </div>
-            <div class="new-info">
-              <div class="new-img">
+            <div class="new-info card">
+              <div class="new-img card">
                 <img src="img/new-img3.jpg" alt="">
               </div>
               <div class="nev-title">
@@ -243,7 +239,7 @@
               <div class="sideBar_section">
                 <h1>Самое обсуждаемое</h1>
                 <div class="search-img">
-                  <img src="img/sidebar-img.jpg" alt="">
+                  <img class="sideBar_section-img" src="img/sidebar-img.jpg" alt="">
                 </div>
                 <div class="data-title">
                   <img src="img/3-2.png" alt="">
@@ -263,36 +259,24 @@
       <hr>
       </hr>
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <ul>
-              <li>
-                <span class="descr">
-                  <a href="#">Как правильно фотографировать животных</a>
-                </span>
-                <img src="img/useful-img1.jpg" alt="">
-              </li>
-            </ul>
+        <div class="useful_tips__body">
+          <div class="useful_tips-column _ibg">
+            <img src="img/useful-img1.jpg" alt="">
+            <div class="useful_tips-hover">
+              <a href="#">Как правильно фотографировать животных</a>
+            </div>
           </div>
-          <div class="col">
-            <ul>
-              <li>
-                <span class="descr">
-                  <a href="#">Чумка у кошек: симптомы, лечение и профилактика</a>
-                </span>
-                <img src="img/useful-img2.jpg" alt="">
-              </li>
-            </ul>
+          <div class="useful_tips-column _ibg">
+            <img src="img/useful-img2.jpg" alt="">
+            <div class="useful_tips-hover">
+              <a href="#">Чумка у кошек: симптомы, лечение и профилактика</a>
+            </div>
           </div>
-          <div class="col">
-            <ul>
-              <li>
-                <span class="descr">
-                  <a href="#">Как аквариум в доме влияет на здоровье человека</a>
-                </span>
-                <img src="img/useful-img3.jpg" alt="">
-              </li>
-            </ul>
+          <div class="useful_tips-column _ibg">
+            <img src="img/useful-img3.jpg" alt="">
+            <div class="useful_tips-hover">
+              <a href="#">Как аквариум в доме влияет на здоровье человека</a>
+            </div>
           </div>
         </div>
       </div>
@@ -302,19 +286,17 @@
         <h1>Получайте интересные статьи первыми!</h1>
         <hr>
         </hr>
-        <div class="row">
-          <div class="col">
-            <div class="input-holder">
-              <input type="text" class="search-input" id="name" name="searchString" placeholder="Ваше имя"
+        <div class="col">
+          <div class="form">
+            <form action="#" id="form" class="form__body">
+              <input type="text" class="form-input _req" id="name" name="searchString" placeholder="Ваше имя"
                 autocomplete="off">
-            </div>
-            <div class="input-holder">
-              <input type="text" class="search-input" name="searchString" placeholder="E-mail" id="E-mail"
+              <input type="text" class="form-input _req _email" name="searchString" placeholder="E-mail" id="E-mail"
                 autocomplete="off">
-            </div>
-            <div class="btn-articles">
-              <button>Подписаться</button>
-            </div>
+              <div class="btn-articles">
+                <button type="submit">Подписаться</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -336,7 +318,7 @@
     </section>
     <footer class="section-list_footer">
       <div class="container">
-        <div class="col">
+        <div class="row">
           <div class="search-img">
             <a href="#">
               <img src="img/pets-2.png" alt="">
@@ -368,6 +350,7 @@
   <script src="https://use.fontawesome.com/3b749b4378.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/DynamicAdapt.js"></script>
   <script src="js/script.js"></script>
 </body>
 
