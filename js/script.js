@@ -17,7 +17,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-
 //Функция теста email
 function emailTest(input) {
   return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
@@ -42,3 +41,20 @@ document.querySelector("#elastic").oninput = function () {
     });
   }
 };
+/*=============================================================================================================*/
+let sideBartitle = document.querySelector('.sideBar__title');
+let checkboxPoll = document.querySelectorAll('.checkbox-poll');
+for (let index = 0; index < checkboxPoll.length; index++) {
+  const checkboxPol = checkboxPoll[index];
+  checkboxPol.addEventListener("change", function (e) {
+    checkboxPol.classList.toggle('_active');
+
+    let checkboxActivePol = document.querySelectorAll('.checkbox-poll._active');
+
+    if (checkboxActivePol.length > 0) {
+      sideBartitle.classList.add('_chekpol');
+    } else {
+      sideBartitle.classList.remove('_chekpol');
+    }
+  }); 
+}
