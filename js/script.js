@@ -53,6 +53,8 @@ for (let index = 0; index < checkboxPoll.length; index++) {
 
     if (checkboxActivePol.length > 0) {
       sideBartitle.classList.add('_chekpol');
+      let chekQuantity = sideBartitle.querySelector('.sideBar__title-quantity');
+      chekQuantity.innerHTML = chekQuantity.getAttribute('data-text') + '' + checkboxActivePol.length;
     } else {
       sideBartitle.classList.remove('_chekpol');
     }

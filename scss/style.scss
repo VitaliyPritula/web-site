@@ -324,9 +324,20 @@ ol {
     padding: 10px 120px;
     font-family: 'RobotoCondensed';
     font-size: 22px;
+
     &:last-child {
       display: none;
     }
+  }
+
+  &._chekpol {
+    h2 {
+      display: none;
+      &:last-child {
+        display: block;
+      }
+    }
+
   }
 }
 
