@@ -16,13 +16,6 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
 });
 
-
-//Функция теста email
-function emailTest(input) {
-  return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-}
-
-
 /*=============================================================================================================*/
 document.querySelector("#elastic").oninput = function () {
   let val = this.value.trim();
