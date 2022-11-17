@@ -297,8 +297,20 @@
                 autocomplete="off">
                 <input id="formEmail" type="text" name="emaill" class="form-input _req _email" placeholder="E-mail">
               <div class="btn-articles">
-                <button type="submit">Подписаться</button>
+                <button data-modal-btn="my_modal" type="submit">Подписаться</button>
               </div>
+
+                <div data-modal-window="my_modal" class="modal">
+                  <div class="modal__content">
+                    <div class="modal__inner">
+                      <h1 class="modal__title">Модальне вікно1</h1>
+                      <div class="close-modal">&times;</div>
+                    </div>
+                    <img src="img/Logo-footer.jpg" alt="">
+                  </div>
+                </div>
+
+
             </form>
           </div>
         </div>
@@ -355,6 +367,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/DynamicAdapt.js"></script>
   <script src="js/formScript.js"></script>
+  <script src="js/popup.js"></script>
   <script src="js/script.js"></script>
 </body>
 
