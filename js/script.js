@@ -1,9 +1,13 @@
-$(document).ready(function () {
-  $(".header-burger").click(function (event) {
-    $(".header-burger, .menu-nav").toggleClass("active");
-    $("body").toggleClass("lock");
+// Меню бургер
+const iconMenu = document.querySelector(".header-burger");
+if (iconMenu) {
+  const menuBody = document.querySelector(".menu-nav");
+  iconMenu.addEventListener("click", function (e) {
+    iconMenu.classList.toggle("active");
+    menuBody.classList.toggle("active");
   });
-});
+}
+
 
 var swiper = new Swiper(".mySwiper", {
   pagination: {
