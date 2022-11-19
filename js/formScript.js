@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let error = formValidate(form);
     if (error === 0) {
-      form.classList.add("_active");
+      form.classList.add("everythingok");
+      // everything is fine
       let response = await fetch("sendmail.php", {
         // method: "POST",
         // body: formData,
@@ -17,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(result.message);
         formPreview.innerHTML = "";
         form.reset();
-        form.classList.remove("_active");
+        form.classList.remove("everythingok");
       } else {
         alert("Ошибка");
-        form.classList.remove("_active");
+        form.classList.remove("_error");
       }
     } else {
       alert("Заколните обязательные поля");

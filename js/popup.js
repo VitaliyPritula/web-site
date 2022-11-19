@@ -12,6 +12,8 @@ for (let i = 0; i < btns.length; i++) {
     close.addEventListener("click", function (e) {
       modal.classList.remove("active");
       backgroundForCart.classList.remove('active');
+       form.reset();
+      form.classList.remove("everythingok");
     });
   });
 }
