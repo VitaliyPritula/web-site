@@ -716,8 +716,11 @@ input[type=checkbox]:checked:disabled+label:before {
 .interesting_articles-email input[type="text"]::placeholder {
   color: rgb(119, 119, 119);
 }
-
+.form *{
+  outline: none;
+}
 .form__body {
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -729,7 +732,12 @@ input[type=checkbox]:checked:disabled+label:before {
     margin: 0px 0px 10px 0px;
   }
 }
+.form-input{
+  &:focus{
+    box-shadow: 0 0 10px #42c7b5;
+  }
 
+}
 .form-input._error {
   border: 1px solid red;
 }

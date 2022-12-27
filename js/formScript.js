@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
       form.classList.add("everythingok");
       // everything is fine
       let response = await fetch("sendmail.php", {
-        // method: "POST",
-        // body: formData,
+        method: "POST",
+        body: formData,
       });
       if (response.ok) {
         let result = await response.json();

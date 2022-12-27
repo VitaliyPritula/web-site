@@ -41,17 +41,17 @@
     $body.='<p><strong>Сообщение:</strong>' .$_POST['message'].'</p>';
   }
 
-  // Прикрепить файл
-  if(!empty($_FILES['image']['tmp_mname'])) {
-    // путь загрузки файла
-    $filePath = __DIR__ . "/files" . $_FILES['image']['name'];
-    // грузим файл
-    if(copy($_FILES['image']['tmp_mname'], $filePath)){
-      $fileAttach = $filePath;
-      $body.='<p><strong>фото в приложении</strong>';
-      $mail->addAttachment($fileAttach);
-    }
-  }
+  // // Прикрепить файл
+  // if(!empty($_FILES['image']['tmp_mname'])) {
+  //   // путь загрузки файла
+  //   $filePath = __DIR__ . "/files" . $_FILES['image']['name'];
+  //   // грузим файл
+  //   if(copy($_FILES['image']['tmp_mname'], $filePath)){
+  //     $fileAttach = $filePath;
+  //     $body.='<p><strong>фото в приложении</strong>';
+  //     $mail->addAttachment($fileAttach);
+  //   }
+  // }
 
   $mail->Body = $body;
 
